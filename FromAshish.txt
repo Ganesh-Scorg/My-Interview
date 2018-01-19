@@ -168,19 +168,102 @@ synechron Interview questions:
 1st round:
 -arrange join statement words in proper order.(where, group by, order by,from, select,having)
 -object class methods.
+https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html
+
 -jsp implicit objects.
+https://www.tutorialspoint.com/jsp/jsp_implicit_objects.htm
+
 -how to write custom tags in jsp.
+https://www.javatpoint.com/jstl-core-tags
+https://www.javatpoint.com/example-of-jsp-custom-tag
+
 -difference between callable and runnable.
+Runnable tasks can be run using the Thread class or ExecutorService whereas Callables can be run only using the ExecutorService.
+Callable is same as Runnable but it can return any type of Object if we want to get a result or status from work (callable).
+
 -equals, hashcode with syntax.
+https://javaranch.com/journal/2002/10/equalhash.html
+public class Test
+2.	{
+3.		private int num;
+4.		private String data;
+5.
+6.		public boolean equals(Object obj)
+7.		{
+8.			if(this == obj)
+9.				return true;
+10.			if((obj == null) || (obj.getClass() != this.getClass()))
+11.				return false;
+12.			// object must be Test at this point
+13.			Test test = (Test)obj;
+14.			return num == test.num &&
+15.			(data == test.data || (data != null && data.equals(test.data)));
+16.		}
+17.
+18.		public int hashCode()
+19.		{
+20.			int hash = 7;
+21.			hash = 31 * hash + num;
+22.			hash = 31 * hash + (null == data ? 0 : data.hashCode());
+23.			return hash;
+24.		}
+25.
+26.		// other methods
+27.	}
+
 -different methods of collections class.
+-> addAll(), sort(), binarySearch(), replaceAll(), reverse(), max(), min(), 
+http://www.digizol.com/2008/07/java-sorting-comparator-vs-comparable.html
+
 -SPring scopes?
+Singleton, Prototype, request, session and Global session
+XmlWebApplication context support last 3 type.
+http://www.baeldung.com/spring-bean-scopes
+https://javabeat.net/spring-mvc-application-context/
+
 -Which spring scopes are threadsafe.
+https://tarunsapra.wordpress.com/2011/08/21/spring-singleton-request-session-beans-and-thread-safety/
+
+
+
 -write string reverse program , with and without recursion.
+
 - Spring life cycle methods.
+InitializingBean interface provide afterPropertySet() and DesposableBean interface support destroy method
+Also xml based bean definition as init-method and destroy-method attribute to provide relevant methods.
+
+It required a shutdown hook registration in application  context
+
+default-init-method and default-destroy-method can be provided in beans namespace for all beans
+
+
 -difference between concurrenthashmap and hashmap.
+http://www.java67.com/2012/08/difference-between-hashmap-and-concurrentHashMap-java-collection.html
+http://javaconceptoftheday.com/how-hashmap-works-internally-in-java/
+http://www.java67.com/2017/08/top-10-java-hashmap-interview-questions.html
+https://dzone.com/articles/how-concurrenthashmap-works-internally-in-java
+
+For example, if you want to preserve the order of mapping then you can consider using LinkedHashMap. 
+If you want to keep mappings sorted then you can use TreeMap, which is a sorted map implementation.Similarly, 
+if you need a hash table implementation which is thread-safe and can be used in a concurrent application
+ without compromising the Scalability then consider using ConcurrentHashMap.
+
+
+- Transient keyword =>
+Java transient keyword is used in serialization. If you define any data member as transient, it will not be serialized.
+https://www.javatpoint.com/transient-keyword
+
 -suppose i want to create readonly list then?
+Collections.unModifiableList()
+http://javarevisited.blogspot.in/2012/07/create-read-only-list-map-set-example-java.html
+
 -fail fast and fail safe iterator? give me real examples of both types.
+https://www.geeksforgeeks.org/fail-fast-fail-safe-iterators-java/
+https://www.journaldev.com/1330/java-collections-interview-questions-and-answers
+
 -callable vs runnable.
+https://www.journaldev.com/1162/java-multithreading-concurrency-interview-questions-answers
+
 
 2nd Round:
 -mvc flow
