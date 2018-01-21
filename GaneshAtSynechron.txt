@@ -1,0 +1,50 @@
+Synechron Interview Asked to Ganesh
+1. Write a Singleton class with thread safety.
+2. what is ThreadPool
+3. what is Callable Vs Runnable
+4. What is Comparable and comparator
+5. Hibernet is mandatory.
+6. What are new features in Java 1.7 or Java 8 depends upon which Java version you used.
+7. How to define a user defined Exception.
+8. If the base class throws Exception and child class throws IOException, will it work?
+9. what are different type of Exception in Java.
+10. Difference between HashMap and HashSet, what to be used in which situation.
+11. Difference between ArrayList and LinkedList, what to be used in which situation.
+12. Internal working of HashMap.
+13. Internal working of ConcorrentHashMap.
+14. what are different ways to instantiate a java class object.
+15. what are the methods in Collection class and Object class.
+16. what is use of wait and notify method. 
+17. what is difference between notify and notify all.
+18. Write a program on to check a given number is prime or not.
+19. What is load factor in Data Structure and what is a load factor of HashMap.
+20. Given a below code snipet, review it:
+
+public ArrayList StringEqual(String str)
+{
+	String myString = "IamGood";
+	
+	ArrayList al = new ArrayList();
+	
+	if(str.equals(MyString))
+	{
+		al.put(str);
+	}
+	
+	return al;
+}
+
+Ans: A] Return type function should be Generic as List<String>.
+B] al object should be created as List<String> al = new ArrayList<String>()
+C] str.equals(MyString) may throw nullpointer exception, instead the statement should be if(MyString.equals(str))
+
+
+Rould 2:
+
+1. Tell me your role in company.
+2. what technology you have used in your project.
+3. Hibernet is mandatory.
+4. which API of JdbcTemplate is used in case i wanted to insert huge number of record into sql database.
+6. write a sql query to find the 3rd highest salary of employe.
+ 
+

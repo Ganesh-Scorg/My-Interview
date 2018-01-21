@@ -123,6 +123,8 @@ t.run();
 -Difference between cross join and inner join.
 -Simple question about how many rows in case of left and right join.
 -program to print frequency of each character in string.
+https://codereview.stackexchange.com/questions/44186/count-number-of-each-char-in-a-string
+
 internal implementation of wait and notify.
 -Time complexity, for that program and how to make it more efficient.
 
@@ -159,6 +161,9 @@ bean id e2 class=employee, so here how many objects are created, because scope i
 -Hashmap internal working.
 - Equals ,hashcode.
 - Palindrom program using single loop.
+https://www.tutorialgateway.org/palindrome-program-in-java/
+https://beginnersbook.com/2014/01/java-program-to-check-palindrome-string/
+
 - abstract private , how it is inhereted.
 -i want to code cat(run, hairy,tail,eat),bat(fly,2legs,color,eat),sparrow(fly,beak,eat).
 - suppose i want am fetching some data from database using select and order by, and i want to retain ordering when i insert some new data from frontend , then which collection i will use.
@@ -351,6 +356,8 @@ Softcell interview questions
 2. Helicafter can fly, airplane can fly and run.. This is the statement tell me how many classes and interface you create
 
 3.write the program to find sum of matrix diagonal s
+https://www.roseindia.net/tutorial/java/core/findSumOfDiagonals.html
+
 4. Write a program to reverse a string with same possion of special characters if string has special characters
 
 Synychron interview questions

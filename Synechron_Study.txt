@@ -1,0 +1,11 @@
+Program 1: Reverse Signly Linked list.
+http://algorithms.tutorialhorizon.com/reverse-a-linked-list/
+
+Program 2: Find the middle node of a Linked list
+=> Take 2 pointers to the head. One incremented to next and second incremented to next of next.
+
+Program 3: Find a loop in Linked List
+=> https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/
+
+Program 4: SOLID Principal
+https://dzone.com/articles/the-solid-principles-in-real-life
